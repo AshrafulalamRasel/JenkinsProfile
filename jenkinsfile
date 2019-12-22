@@ -11,6 +11,7 @@ pipeline {
          stage('Build info') {
              steps {
                  echo "Running build: ${env.BUILD_ID} on ${env.JENKINS_URL}"
+                 slackSend channel: 'jenkinsprofile1', message: "Build Started - ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"
                  git 'https://github.com/AshrafulalamRasel/JenkinsProfile'
              }
          }
