@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Registration</title>
+    <title>Login</title>
     <style type="text/css">
         .flex-center {
             display: -webkit-box;
@@ -29,28 +29,28 @@
             flex-direction: column !important;
         }
 
-        .registration {
+        .login {
             width: 100%;
             height: 100vh;
             background: #e9ebee;
             font-family: "Open Sans", sans-serif;
         }
 
-        .registration .card {
+        .login .card {
             border: 0;
         }
 
-        .registration .card .card-header {
+        .login .card .card-header {
             background: none;
             border-bottom: 2px solid #e9ebee;
         }
 
-        .registration .card .card-body .form-control {
+        .login .card .card-body .form-control {
             font-size: 14px;
             height: 40px;
         }
 
-        .registration .card .card-body .btn {
+        .login .card .card-body .btn {
             color: #ffffff;
             background: rgb(131, 145, 255);
             background: linear-gradient(90deg,
@@ -58,18 +58,18 @@
             rgba(102, 184, 252, 1) 68%);
         }
 
-        .registration .card .card-body p {
+        .login .card .card-body p {
             font-size: 14px;
         }
 
         @media (max-width: 576px) {
-            .registration .card {
+            .login .card {
                 width: 95%;
             }
         }
 
         @media (min-width: 576px) {
-            .registration .card {
+            .login .card {
                 width: 450px;
             }
         }
@@ -78,21 +78,16 @@
 
 <body>
 
-<div class="registration">
+<div class="login">
     <div class="flex-center flex-column">
         <div class="card">
             <div class="card-header text-center py-4">
-                <h5 class="mb-0">Create Account</h5>
+                <h5 class="mb-0">Login</h5>
             </div>
-            <div class="card-body pt-4 pb-5">
+            <div class="card-body py-5">
 
 
-                <form action="teacher_registation" method="post" id="from">
-                    <div class="form-group mb-4">
-                        <small class="text-muted">Username*</small>
-                        <input type="text" name="name" class="form-control rounded-0 shadow-none"
-                               placeholder="Enter username">
-                    </div>
+                <form form action="login_teacher" method="post">
                     <div class="form-group mb-4">
                         <small class="text-muted">E-mail*</small>
                         <input type="text" name="email" class="form-control rounded-0 shadow-none"
@@ -103,12 +98,12 @@
                         <input type="password" name="password" class="form-control rounded-0 shadow-none"
                                placeholder="Enter password">
                     </div>
-                    <button type="submit" class="btn btn-block rounded-0 shadow-none">Submit</button>
+                    <button type="submit" class="btn btn-block rounded-0 shadow-none">Login</button>
                 </form>
 
 
                 <div class="text-center pt-4">
-                    <p class="mb-0">Already have an account ? <a href="login.html">Login</a></p>
+                    <p class="mb-0">Have no account ? <a href="registration.html">Registration</a></p>
                 </div>
             </div>
         </div>
