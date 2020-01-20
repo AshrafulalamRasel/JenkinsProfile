@@ -9,8 +9,8 @@ import javax.persistence.*;
 @Setter
 @Getter
 @Entity
-@Table(name = "User")
-public class User {
+@Table(name = "TEACHER")
+public class Teacher {
 
     @Id
     @GeneratedValue(generator = "UUID")
@@ -23,4 +23,6 @@ public class User {
     private String name;
     private String email;
     private String password;
+
+
 }
